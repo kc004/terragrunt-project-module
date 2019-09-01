@@ -22,10 +22,6 @@ variable "aws_key_name" {
   description = "AWS ssh key name"
 }
 
-variable "user_file" {
-  description = "AWS stage/prod/test files"
-}
-
 variable "CloudTrailBucketName" {
   description = "AWS trail bucket"
 }
