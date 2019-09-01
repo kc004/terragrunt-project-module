@@ -38,7 +38,7 @@ resource "aws_instance" "server2" {
   ami           = "${var.ami}"
   instance_type = "${var.instance_type}"
   subnet_id     = data.terraform_remote_state.networking.outputs.internal_subnet2
-  key_name = "${var.aws_key_name}"
+  key_name      = "${var.aws_key_name}"
   user_data = <<-EOF
               #!/bin/bash
               echo "Hello, This is stage" > index.html
